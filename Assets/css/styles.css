@@ -50,6 +50,7 @@ a {
 img {
 	display: block;
 }
+
 .sm-hidden {
 	display: none;
 }
@@ -82,6 +83,14 @@ img {
 	left: 50%;
 	transform: translateX(-50%);
 	border-radius: 3rem;
+}
+
+.section-desc {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 3rem auto;
+	font-weight: 800;
+	max-width: 32rem;
 }
 
 /* ! HEADER  */
@@ -221,6 +230,35 @@ header::before {
 }
 /* ! ABOUT  */
 
+/* ! SERVICES  */
+.service {
+	width: 30rem;
+	border: 2px solid red;
+	border-radius: 2rem;
+	margin: 2rem auto;
+	padding: 4rem 1rem;
+	text-align: center;
+}
+
+.service i {
+	font-size: 7rem;
+	display: block;
+	margin: 0 0 2rem;
+	color: var(--orange);
+}
+
+.service-name {
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	margin-bottom: 2rem;
+}
+
+.service-desc {
+	font-size: 1.5rem;
+	line-height: 1.4;
+	color: var(--very-dark-red);
+}
+/* ! SERVICES  */
 /* ! TEAM  */
 .team {
 	padding: 4rem 1rem;
@@ -384,6 +422,11 @@ footer {
 	.section-heading {
 		font-size: 3rem;
 	}
+
+	.section-desc {
+		font-size: 2rem;
+		max-width: 45rem;
+	}
 	/* ! HEADER  */
 
 	.sm-hidden {
@@ -490,6 +533,45 @@ footer {
 		margin: 4rem 2rem 0 4rem;
 	}
 	/* ! ABOUT  */
+
+	.services-con {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		max-width: 110rem;
+		margin: 2rem auto;
+	}
+
+	.service {
+		width: 32rem;
+		cursor: pointer;
+		transition: 1s;
+	}
+
+	.service:hover {
+		background-color: var(--dark-gray);
+		position: relative;
+		transform: translateY(-2rem);
+		transition: 1s;
+	}
+
+	.service:hover i {
+		color: var(--dark-red);
+		transition: 1s;
+	}
+
+	.service:hover .service-name {
+		color: var(--gray);
+		transition: 1s;
+	}
+
+	.service:hover .service-desc {
+		color: var(--gray);
+		transition: 1s;
+	}
+
+	/* ! SERVICES  */
 
 	/* ! TEAM  */
 	.team {
@@ -707,6 +789,11 @@ footer {
 @media screen and (min-width: 1280px) {
 	.section-heading {
 		font-size: 4rem;
+	}
+
+	.section-desc {
+		font-size: 2.1rem;
+		max-width: 55rem;
 	}
 
 	/* ! HEADER  */
